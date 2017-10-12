@@ -1,19 +1,10 @@
-var app = angular.module('app', ['ui.bootstrap']);
-
-function CarouselDemoCtrl($scope){
-  $scope.myInterval = 3000;
-  $scope.slides = [
-    {
-      image: 'http://lorempixel.com/400/200/'
-    },
-    {
-      image: 'http://lorempixel.com/400/200/food'
-    },
-    {
-      image: 'http://lorempixel.com/400/200/sports'
-    },
-    {
-      image: 'http://lorempixel.com/400/200/people'
-    }
+angular.module('ui.bootstrap.demo', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
+angular.module('ui.bootstrap.demo').controller('CarouselCtrl', function ($scope) {
+  
+  $scope.slides = [ 
+      { image: 'images/gio3d-3.jpg',  id:0},
+      { image: 'images/gio3d-2.jpg',  id:1},
+      { image: 'images/gio3d-4.jpg',  id:2} 
   ];
-}
+  
+});
